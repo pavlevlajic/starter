@@ -2,3 +2,31 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body,
+html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+app-root {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.content {
+  flex: 1;
+  overflow-y: auto;
+  padding: 20px 60px 20px 60px;
+}
+
+router-outlet {
+  display: block;
+}
+
+.active {
+    @apply text-blue-500 bg-gray-700;
+  }
+  
